@@ -2,12 +2,17 @@
 #Do while
 
 
-palpite = 0
+palpite = 8
 numero = 5
 
-while palpite != numero:
+while True:
     print("Qual o número correto?")
     palpite = int(input())
-
-print("Parabéns você acertou!!")
-#print("Poxa vida, parece que não foi desta vez!!")
+    if palpite == numero:
+        print("Parabéns você acertou!!")
+        break
+    else:
+        print("Poxa vida, parece que não foi desta vez!!")
+else:
+    print("Erro na aplicação")
+    print(bool(palpite))        
